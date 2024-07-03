@@ -6476,7 +6476,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &497580535
 GameObject:
@@ -11665,9 +11665,9 @@ GameObject:
   - component: {fileID: 958686495}
   - component: {fileID: 958686494}
   - component: {fileID: 958686493}
-  - component: {fileID: 958686492}
   - component: {fileID: 958686498}
   - component: {fileID: 958686497}
+  - component: {fileID: 958686500}
   m_Layer: 0
   m_Name: "\u5E8A_4F_\u843D\u3068\u3057\u7A74"
   m_TagString: Untagged
@@ -11675,20 +11675,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &958686492
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958686491}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 928639225}
 --- !u!33 &958686493
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -11999,6 +11985,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b31cab9450746b78df33a9e58b099f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!64 &958686500
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958686491}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 928639225}
 --- !u!1 &970852699
 GameObject:
   m_ObjectHideFlags: 0
@@ -15517,7 +15517,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-18264
+  m_Name: pb_Mesh35410
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16571,7 +16571,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-34134
+  m_Name: pb_Mesh35678
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18082,7 +18082,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502533803}
   m_LocalRotation: {x: -0, y: -0.69490224, z: -0, w: 0.71910423}
-  m_LocalPosition: {x: 39.47, y: 4.48, z: 10.99}
+  m_LocalPosition: {x: 35.61, y: 13.8, z: 14.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18903,7 +18903,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-34032
+  m_Name: pb_Mesh35814
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
