@@ -18,7 +18,8 @@ public class FallFloor : MonoBehaviour
 
     void OnCollisionEnter(Collision collision){
         if(collision.gameObject.CompareTag("Player")){
-            Invoke("Fall",0.1f);
+            Destroy(gameObject);
+            //Invoke("Fall",0.1f);
         }
     }
 
