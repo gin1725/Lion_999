@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEditor.SearchService;
+using UnityEngine.SceneManagement;
+
 
 public class Player : MonoBehaviour
 {
@@ -42,8 +45,11 @@ public class Player : MonoBehaviour
         {
             goal_flag = 1;
         }
-        TextCoin.text = string.Format("COIN:{0}\nKEY:{0}", count_coin,goal_flag);
 
+        if (transform.position.y <= -10)
+        {
+            SceneManager.LoadScene("Game Over");
+        }
         
         
     }
