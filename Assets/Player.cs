@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +31,10 @@ public class Player : MonoBehaviour
         if(Input.GetKey("left")) // ←ならY軸に-3度回転する
         {
             transform.Rotate(0f,-3.0f,0f);
+        }
+
+        if(transform.position.y <= -10.0f){
+            SceneManager.LoadScene("Game Over");
         }
     }
 }
