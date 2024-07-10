@@ -43,8 +43,11 @@ public class Player : MonoBehaviour
             goal_flag = 1;
         }
         TextCoin.text = string.Format("COIN:{0}\nKEY:{0}", count_coin,goal_flag);
+
+        
         
     }
+    
 
     void OnCollisionEnter(Collision other)
     {
@@ -52,6 +55,12 @@ public class Player : MonoBehaviour
         {
             count_coin++;
         }
+
+        if (other.gameObject.name == "Enemy")//オブジェクト名coinに当たったら取得とする
+        {
+            Application.LoadLevel("Game Over");
+        }
+
     }
 }
 

@@ -20,7 +20,6 @@ public class EnemyMove : MonoBehaviour
 
         var heading = target.position - transform.position;
         var distance = heading.magnitude;
-        Debug.Log(distance);
         if (distance < 5.0)
         {
             Quaternion lookRotation = Quaternion.LookRotation(target.transform.position - transform.position, Vector3.up);
