@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 using UnityEngine.UI;
 using TMPro;
 
@@ -10,7 +9,6 @@ public class Player : MonoBehaviour
     private int count_coin;//コイン枚数を数えるための変数
     private int goal_flag;//ゴールできる状態かどうかを判定
     [SerializeField] private TextMeshProUGUI TextCoin;
-
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +38,6 @@ public class Player : MonoBehaviour
             transform.Rotate(0f,-3.0f,0f);
         }
 
-
         if (count_coin == 4)//コインを4枚集めたらプレイヤーをゴールできる状態にする
         {
             goal_flag = 1;
@@ -63,7 +60,6 @@ public class Player : MonoBehaviour
         {
             Application.LoadLevel("Game Over");
         }
-
 
     }
 }
